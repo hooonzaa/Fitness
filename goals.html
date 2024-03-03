@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.JS"></script>
+</head>
+<body>
+    <div class="hur">
+        <button type="button" onclick="Home()">HOME</button>
+    </div>
+  
+    <div class="container">
+        <h1>Goals</h1>
+        <label for="sport">Vyber sport:</label>
+        <input type="text" id="sport" list="výběr">
+        <datalist id="výběr">
+            <option value="plavání"></option>
+            <option value="běh"></option>
+            <option value="posilování"></option>
+            <option value="jízda na kole"></option>
+        </datalist>
+    
+        <label for="goal">Nastavit cíl (minuty):</label>
+        <input type="number" id="goal" min="0">
+        <button onclick="setGoal()">Nastavit</button>
+        <div id="progress"></div>
+    </div>
+    
+</body>
+</html>
